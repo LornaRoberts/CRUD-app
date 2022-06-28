@@ -7,6 +7,9 @@ let port = 3000;
 
 app.use('/products', product);
 
+app.get('/', (req, res) => {
+    res.send('hello world')
+  })
 
 app.listen(port, () => {
     console.log('Server is up and running on port number ' + port);
